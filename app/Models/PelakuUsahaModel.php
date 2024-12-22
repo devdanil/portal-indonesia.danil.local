@@ -26,7 +26,6 @@ class PelakuUsahaModel extends Model
         'captcha', 
         'nik_pimpinan', 
         'password', 
-        'real_password', 
         'id_badan_usaha', 
         'id_skala', 
         'id_kepemilikan', 

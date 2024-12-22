@@ -59,7 +59,7 @@
                         <?php echo session()->getFlashdata('error'); ?>
                     </div>
                 <?php endif; ?>
-              <form method="post" action="<?php echo base_url(); ?><?php echo (empty($model)) ? '/subkategori/save' : '/subkategori/update/'.$model->id_sub ?>">
+              <form method="post" action="<?php echo base_url('admin'); ?><?php echo (empty($model)) ? '/subkategori/save' : '/subkategori/update/'.$model->id_sub ?>">
                 <?= csrf_field(); ?>
                 <div class="card-body">
                   <div class="form-group">

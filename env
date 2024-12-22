@@ -14,13 +14,13 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = ''
+app.baseURL = 'https://portal-indonesia.id/'
 # app.forceGlobalSecureRequests = false
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
@@ -37,12 +37,12 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
+database.default.hostname = localhost
+database.default.database = dev_portalin
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
@@ -91,7 +91,7 @@
 # ENCRYPTION
 #--------------------------------------------------------------------
 
-# encryption.key =
+encryption.key = hex2bin:1d795dd6f5deee4ef0c91a0ef95cd4c72d4af78cf016e5215a8c8858a84f411c
 # encryption.driver = OpenSSL
 # encryption.blockSize = 16
 # encryption.digest = SHA512

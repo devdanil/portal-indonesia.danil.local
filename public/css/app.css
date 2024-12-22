@@ -1,0 +1,8 @@
+body {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+.card-login {
+  width: 320px;
+}

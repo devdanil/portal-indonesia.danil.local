@@ -4,19 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portal Indonesia | <?php echo (empty($model)) ? 'Form Tambah Produk' : 'Form Edit Produk' ?></title>
-  <link href="<?php echo base_url() ?>/assets/logo.png" rel="icon">
-  <link href="<?php echo base_url() ?>/assets/logo.png" rel="apple-touch-icon">
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>/assets/plugins/fontawesome-free/css/all.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>/assets/back/css/adminlte.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>/assets/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="<?php echo base_url() ?>/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>/assets/plugins/summernote/summernote-bs4.min.css">
+  <?=  view('admin/template/header-form');?>
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -64,7 +52,7 @@
                         <?php echo session()->getFlashdata('error'); ?>
                     </div>
                 <?php endif; ?>
-              <form enctype="multipart/form-data" method="post" action="<?php echo base_url(); ?><?php echo (empty($model)) ? '/produk/save' : '/produk/update/'.$model->id_produk ?>">
+              <form enctype="multipart/form-data" method="post" action="<?php echo base_url('admin'); ?><?php echo (empty($model)) ? '/produk/save' : '/produk/update/'.$model->id_produk ?>">
                 <?= csrf_field(); ?>
                 <div class="card-body">
                     <div class="row">
@@ -237,20 +225,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?php echo base_url() ?>/assets/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo base_url() ?>/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Select2 -->
-<script src="<?php echo base_url() ?>/assets/plugins/select2/js/select2.full.min.js"></script>
-<!-- jquery-validation -->
-<script src="<?php echo base_url() ?>/assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-<script src="<?php echo base_url() ?>/assets/plugins/jquery-validation/additional-methods.min.js"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo base_url() ?>/assets/back/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url() ?>/assets/back/js/demo.js"></script>
-<!-- Summernote -->
-<script src="<?php echo base_url() ?>/assets/plugins/summernote/summernote-bs4.min.js"></script>
+  <?= view('admin/template/foot-form'); ?>
 <!-- Page specific script -->
 <script>
 $(function () {
@@ -274,7 +249,7 @@ $(document).ready(function(e) {
  $('#kategori').change(function(){
      var kat_id = $('#kategori').val();
      if (kat_id != ""){
-         var post_url = "<?php echo base_url();?>/produk/get_sub_kategori/" + kat_id;
+         var post_url = "<?php echo base_url('admin');?>/produk/get_sub_kategori/" + kat_id;
          $.ajax({
              type: "POST",
              url: post_url,
@@ -302,7 +277,7 @@ $(document).ready(function(e) {
  $('#provinsi').change(function(){
      var prov_id = $('#provinsi').val();
      if (prov_id != ""){
-         var post_url = "<?php echo base_url();?>/produk/get_city/" + prov_id;
+         var post_url = "<?php echo base_url('admin');?>/produk/get_city/" + prov_id;
          $.ajax({
              type: "POST",
              url: post_url,

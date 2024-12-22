@@ -1,0 +1,9 @@
+  <!-- Vendor JS Files -->
+  <script src="<?= base_url("/assets/front/vendor-theme/bootstrap/js/bootstrap.bundle.min.js") ?> "></script>
+  <script src="<?php echo base_url() ?>/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="<?php echo base_url() ?>/assets/front/vendor-theme/glightbox/js/glightbox.min.js"></script>
+  <script src="<?php echo base_url() ?>/assets/front/vendor-theme/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?php echo base_url() ?>/assets/front/vendor-theme/swiper/swiper-bundle.min.js"></script>
+  <script src="<?php echo base_url() ?>/assets/plugins/summernote/summernote-bs4.min.js"></script>
+  <script src="<?= base_url("/assets/front/js/main.js") ?> "></script>
+  <script src="<?= base_url("/js/app.js") ?> "></script>

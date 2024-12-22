@@ -32,10 +32,14 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => 'portalin_root',
-        'password' => 'famouz20032007',
-        'database' => 'portalin_ Datav2',
+        // 'hostname' => 'localhost',
+        // 'username' => 'portalin_root',
+        // 'password' => 'famouz20032007',
+        // 'database' => 'portalin_ Datav2',
+        'hostname' => '',
+        'username' => '',
+        'password' => '',
+        'database' => '',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

@@ -37,7 +37,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="<?php echo base_url() ?>/pelaku-usaha-admin">List Pelaku Usaha</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url('admin') ?>/pelaku-usaha-admin">List Pelaku Usaha</a></li>
               <li class="breadcrumb-item active"><?php echo (empty($model)) ? 'Tambah Pelaku Usaha' : 'Edit Pelaku Usaha' ?></li>
             </ol>
           </div>
@@ -63,7 +63,7 @@
                         <?php echo session()->getFlashdata('error'); ?>
                     </div>
                 <?php endif; ?>
-              <form enctype="multipart/form-data" action="<?php echo base_url(); ?><?php echo (empty($model)) ? '/pelaku-usaha/save' : '/pelaku-usaha/update/'.$model->id_pelaku ?>" method="post">
+              <form enctype="multipart/form-data" action="<?php echo base_url('admin'); ?><?php echo (empty($model)) ? '/pelaku-usaha/save' : '/pelaku-usaha/update/'.$model->id_pelaku ?>" method="post">
                 <?= csrf_field(); ?>
                 <div class="card-body">
                   <div class="row">
@@ -346,7 +346,7 @@
      $('#id_provinsi').change(function(){
         var prov_id = $('#id_provinsi').val();
         if (prov_id != ""){
-            var post_url = "<?php echo base_url();?>/produk/get_city/" + prov_id;
+            var post_url = "<?php echo base_url('admin');?>/produk/get_city/" + prov_id;
             $.ajax({
                 type: "POST",
                 url: post_url,
