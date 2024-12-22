@@ -35,8 +35,9 @@ $routes->get('/', 'Web::index');
 $routes->get('/login', 'Auth::index');
 $routes->get('/admin', 'Admin::index',['filter' => 'auth']);
 $routes->get('/logout', 'Auth::logout');
-$routes->get('/register/admin', 'Auth::register');
-$routes->post('/register/process', 'Auth::process');
+//$routes->get('register/YWRtaW5wb3J0YWxpbmRvbmVzaWE=', 'Auth::register');
+//$routes->get('/register/admin', 'Auth::register');
+//$routes->post('/register/process', 'Auth::process');
 $routes->post('/login/process', 'Auth::auth_process');
 // web
 $routes->get('/etalase', 'Web::etalase');

@@ -325,7 +325,7 @@ class Web extends Auth
     {
         $recaptchaResponse = trim($this->request->getVar('g-recaptcha-response'));
         // $userIp=$this->request->ip_address();
-        $secret_code='6LektGgpAAAAALCFdpq6f0ij1fAxQLI2-TpjZZh8'; //with email portal: portal.nasional.id@gmail.com
+        $secret_code='6LfGesopAAAAAKBYfLJ6WZ-e6f5-lBR4dTMUgW2T'; //with email portal: portal.nasional.id@gmail.com
         $credential = array(
                 'secret' => $secret_code,
                 'response' => $this->request->getVar('g-recaptcha-response')
