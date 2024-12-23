@@ -1,7 +1,8 @@
 <main id="main">
+  <script src='https://www.google.com/recaptcha/api.js?hl=id'></script>
   <section id="contact" class="contact" style="margin-top: 50px;">
     <div class="container">
-    <h4 class="text-muted text-uppercase"><b>Kontak</b></h4>
+      <h4 class="text-muted text-uppercase"><b>Kontak</b></h4>
       <div>
         <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6136017202352!2d106.83122695081093!3d-6.182440362278131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4316d9d2fa7%3A0x8ff42ec1d74238de!2sJl.%20M.I.%20Ridwan%20Rais%20No.5%2C%20RT.7%2FRW.1%2C%20Gambir%2C%20Kecamatan%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010110!5e0!3m2!1sid!2sid!4v1637399738591!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -30,6 +31,7 @@
         </div>
         <div class="col-lg-8 mt-5 mt-lg-0">
           <form action="<?php echo base_url('pages/contact/store') ?>" method="post" class="php-email-form">
+            <?= csrf_field() ?>
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" value="<?php echo old('name') ?>" name="name" class="form-control" id="name" placeholder="Nama Lengkap" required>

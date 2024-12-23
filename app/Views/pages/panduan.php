@@ -13,7 +13,7 @@
               <div class="read-more">
                 <a href="<?php echo base_url() ?>/assets/tata_cara/Alur Pendaftaran.pdf" target="_blank" style="background-color: #66B2FF">Download Panduan</a>
                 <?php if (!session()->get('logged_in')) { ?>
-                  <a href="<?php echo base_url() ?>/register">Registrasi</a>
+                  <a href="<?php echo base_url('pages/registrasi') ?>">Registrasi</a>
                 <?php } ?>
               </div>
             </div>

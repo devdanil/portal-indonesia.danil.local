@@ -29,7 +29,7 @@
           <li><a href="<?= base_url('pages/registrasi') ?>"
               class="<?= ($active == 'register') ? 'active' : '' ?>">Registrasi</a></li>
         <?php } ?>
-        <li><a href="<?= base_url('pages/pelakuusaha') ?>"
+        <li><a href="<?= base_url('pages/pelakuUsaha') ?>"
             class="<?= ($active == 'pelaku_usaha') ? 'active' : '' ?>">Pelaku Usaha</a></li>
 
         <li><a href="<?= base_url('pages/publikasi') ?>"
