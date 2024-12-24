@@ -11,19 +11,19 @@
         <div class="col-lg-4">
           <div class="info">
             <div class="address">
-              <i class="bi bi-geo-alt"></i>
+              <i class="fa fa-map-pin"></i>
               <h4>Location:</h4>
               <p>Jalan M. I. Ridwan Rais No. 5 Jakarta Pusat 10110. DKI Jakarta, Indonesia.</p>
             </div>
 
             <div class="email">
-              <i class="bi bi-envelope"></i>
+              <i class="fa fa-envelope"></i>
               <h4>Email:</h4>
               <p>info@portal-indonesia.id</p>
             </div>
 
             <div class="phone">
-              <i class="bi bi-phone"></i>
+              <i class="fa fa-phone"></i>
               <h4>Call:</h4>
               <p>(021)7987772</p>
             </div>

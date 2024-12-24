@@ -77,9 +77,9 @@
                                       <li><?= $produk_value->kategori ?></li>
                                       <li><?= $produk_value->nama_produk ?></li>
                                       <li><?= $produk_value->jenis_usaha ?></li>
-                                      <li><i class="bi bi-envelope"></i><a href="<?= $produk_value->email ?>">
+                                      <li><i class="fa fa-envelope"></i><a href="<?= $produk_value->email ?>">
                                           <?= $produk_value->email ?></a></li>
-                                      <li><i class="bi bi-telephone"> <?= $produk_value->handphone ?></i></li>
+                                      <li><i class="fa fa-phone-alt"> <?= $produk_value->handphone ?></i></li>
                                     </ul>
                                     <div class="btn-wrap">
                                       <a href="<?= base_url('user/profile?edit=' . $produk_value->id_produk) ?>" class="btn btn-detail">Edit</a>

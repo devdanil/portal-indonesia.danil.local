@@ -31,8 +31,8 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>">Admin</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>"><time datetime="2<?php echo $berita[0]->created_at ?>"><?php echo $berita[0]->created_at ?></time></a></li>
+                  <li class="d-flex align-items-center"><i class="fa fa-user"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>">Admin</a></li>
+                  <li class="d-flex align-items-center"><i class="fa fa-clock"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>"><time datetime="2<?php echo $berita[0]->created_at ?>"><?php echo $berita[0]->created_at ?></time></a></li>
                 </ul>
               </div>
 

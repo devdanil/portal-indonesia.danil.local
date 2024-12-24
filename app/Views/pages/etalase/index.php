@@ -42,7 +42,6 @@
             foreach ($produk as $prod_value) { ?>
               <div class="col-lg-3 col-md-6 mb-4">
                 <div class="box">
-                  <!-- <span class="popular"><i class="bi bi-star-fill"></i>Populer</span> -->
                   <?php
                   $insert_date = new DateTime($prod_value->insert_date);
                   $now = new DateTime();
@@ -58,9 +57,9 @@
                     <li><?= $prod_value->kategori ?></li>
                     <li><?= $prod_value->nama_produk ?></li>
                     <li><?= ($prod_value->jenis_usaha == null || $prod_value->jenis_usaha == 0) ? 'Tidak ada informasi jenis usaha' : $prod_value->jenis_usaha ?></li>
-                    <li><i class="bi bi-envelope"></i><a href="<?= $prod_value->email ?>">
+                    <li><i class="fa fa-envelope"></i><a href="<?= $prod_value->email ?>">
                         <?= $prod_value->email ?></a></li>
-                    <li><i class="bi bi-telephone"> <?= $prod_value->handphone ?></i></li>
+                    <li><i class="fa fa-phone-alt "> <?= $prod_value->handphone ?></i></li>
                   </ul>
                   <?php if ($prod_value->shoope != null || $prod_value->bukalapak != null || $prod_value->tokopedia != null) { ?>
                     <hr>

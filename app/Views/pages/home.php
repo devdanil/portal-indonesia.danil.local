@@ -113,7 +113,7 @@
           foreach ($kegiatan as $item) {
             echo '<div class="col-md-6">
               <div class="icon-box">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="fa fa-calendar-week"></i>
                 <h4><a href="' . base_url('pages/kegiatan/show/' . $item->nama_kegiatan) . '">' . $item->nama_kegiatan . '
                 </a>
                 </h4>

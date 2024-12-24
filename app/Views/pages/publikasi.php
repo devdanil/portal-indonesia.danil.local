@@ -10,32 +10,25 @@
       <div class="row mt-5">
         <div class="col-md-4 mt-3 mt-md-0">
           <div class="icon-box">
-            <i class="bi bi-calendar4-week"></i>
+            <i class="fa fa-calendar-week"></i>
             <h4><a href="<?= base_url('pages/kegiatan') ?>">Kegiatan - Jadwal Pameran</a></h4>
             <p>Dapatkan informasi seputar kegiatan dan jadwal pameran</p>
           </div>
         </div>
         <div class="col-md-4 mt-3 mt-md-0">
           <div class="icon-box">
-            <i class="bi bi-card-checklist"></i>
+            <i class="fa fa-check-square"></i>
             <h4><a href="<?= base_url('pages/peraturan') ?>">Peraturan - Regulasi</a></h4>
             <p>Informasi seputar Tatacara, Perizinan, dan Peraturan terkait produk dalam negeri</p>
           </div>
         </div>
         <div class="col-md-4 mt-3 mt-md-0">
           <div class="icon-box">
-            <i class="bi bi-camera-reels"></i>
+            <i class="fa fa-video"></i>
             <h4><a href="<?= base_url('pages/video') ?>">Video Produk Indonesia</a></h4>
             <p>Daftar video produk Indonesia</p>
           </div>
         </div>
-        <!--<div class="col-md-4 mt-3 mt-md-0">
-                <div class="icon-box">
-                    <i class="bi bi-card-checklist"></i>
-                    <h4><a href="https://www.katalogprodukhalal.id/" target="_blank">Katalog Produk Halal</a></h4>
-                    <p>Katalog daftar produk halal di Indonesia. Daftarkan produk halalmu pada website ini</p>
-                </div>
-            </div> -->
       </div>
 
     </div>

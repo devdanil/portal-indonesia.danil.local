@@ -3,12 +3,12 @@
   <div class="container d-flex justify-content-center">
     <nav id="navbar" class="navbar w-100 justify-content-center">
 
-      <ul class="justify-content-between w-100">
-        <li>
+      <ul class="justify-content-between w-lg">
+        <li class="px-4">
           <a href="<?= base_url() ?>" class="logo me-auto">
             <img width="130" src="<?= base_url('img/Logo-n.png') ?>">
           </a>
-          <div style="font-size: 8pt;color: #6372b0; " class="text-nowrap text-center"><b>ETALASE PRODUK UMKM</b></div>
+          <div style="font-size: 8pt;color: #6372b0; " class="text-nowrap text-lg-center"><b>ETALASE PRODUK UMKM</b></div>
         </li>
         <li><a href="<?= base_url() ?>" class="<?= ($active == 'home') ? 'active' : '' ?>">Home</a></li>
 
@@ -48,7 +48,7 @@
           <li class="dropdown <?= ($active == 'logging_in') ? 'active' : '' ?>"><a href="#"
               style="border-width: 2px;">
               <span style="color: green;"><?= substr(session()->get('name'), 0, 10) ?></span> <i
-                class="bi bi-chevron-down"></i></a>
+                class="fa fa-chevron-down"></i></a>
             <ul>
               <?php if (session()->get('level') == 3) { ?>
                 <li><a href="<?= base_url('user/profile') ?>">Profil</a></li>
@@ -72,7 +72,13 @@
           </a>
         </li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
+      <div class="d-lg-none d-flex justify-content-between align-content-center w-100">
+        <div><a href="<?= base_url() ?>" class="logo me-auto">
+          <img width="130" src="<?= base_url('img/Logo-n.png') ?>">
+        </a>
+        <div style="font-size: 8pt;color: #6372b0; " class="text-nowrap text-lg-center"><b>ETALASE PRODUK UMKM</b></div></div>
+        <i class="fa fa-list mobile-nav-toggle my-auto me-3"></i>
+      </div>
     </nav>
   </div>
 </header>

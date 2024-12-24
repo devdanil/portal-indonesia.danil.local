@@ -33,8 +33,8 @@
 
                 <div class="entry-meta">
                   <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="<?= base_url('pages/berita/show/' . $link) ?>">Admin</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="<?= base_url('pages/berita/show/' . $link) ?>"><time datetime="<?= $berita_value->created_at ?>"><?= $berita_value->created_at ?></time></a></li>
+                    <li class="d-flex align-items-center"><i class="fa fa-user"></i> <a href="<?= base_url('pages/berita/show/' . $link) ?>">Admin</a></li>
+                    <li class="d-flex align-items-center"><i class="fa fa-clock"></i> <a href="<?= base_url('pages/berita/show/' . $link) ?>"><time datetime="<?= $berita_value->created_at ?>"><?= $berita_value->created_at ?></time></a></li>
                   </ul>
                 </div>
 

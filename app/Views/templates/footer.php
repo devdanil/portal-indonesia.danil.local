@@ -1,6 +1,29 @@
 <footer id="footer" class="mt-auto">
 
-
+  <div class="d-block d-lg-none pt-3 footer-links">
+    <h4 class="text-center">Links</h4>
+    <div class="row">
+      <div class="col-6">
+        <ul type="none">
+          <li><i class="fa fa-chevron-right"></i> <a href="<?php echo base_url() ?>">Home</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/etalase') ?>">Etalase</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/katalog/kuliner') ?>">Kuliner</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/registrasi') ?>">Registrasi</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/publikasi') ?>">Publikasi</a></li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul type="none">
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/pelakuUsaha') ?>">Pelaku Usaha</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/panduan') ?>">Panduan</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/faq') ?>">FAQ</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('pages/contact') ?>">Kontak</a></li>
+          <li><i class="fa fa-chevron-right"></i> <a href="<?= base_url('auth/login') ?>">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="d-lg-none">
   <div class="container">
     <div class="copyright">
       <label for="" style="font-weight: bold">Etalase Produk UMKM Indonesia</label> <br>
