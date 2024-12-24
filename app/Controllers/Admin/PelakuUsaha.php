@@ -40,7 +40,7 @@ class PelakuUsaha extends Log
     $active_params_status = "";
     $active_params_email = "";
     $query_kota = $kota;
-    $link = base_url() . "/pelaku-usaha-admin/export-excel?type=export";
+    $link = base_url() . "admin/pelaku-usaha-admin/export-excel?type=export";
 
     $query_pelaku = $pelaku_usaha->select(['pelaku_usaha.*', 'mst_kota.nama as nama_kota_kab', 'provinsi.nama_provinsi'])
       ->select('(SELECT GROUP_CONCAT(nama_produk) FROM produk WHERE id_pelaku_usaha = id_pelaku) AS produk_data', false)

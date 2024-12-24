@@ -26,13 +26,13 @@
           <div class="col-lg-12 entries">
             <article class="entry entry-single">
               <h2 class="entry-title">
-                <a href="<?php echo base_url() . "/blog/" . $link ?>"><?php echo $berita[0]->judul ?></a>
+                <a href="<?php echo base_url('pages/berita/' . $link) ?>"><?php echo $berita[0]->judul ?></a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="fa fa-user"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>">Admin</a></li>
-                  <li class="d-flex align-items-center"><i class="fa fa-clock"></i> <a href="<?php echo base_url() . "/blog/" . $link ?>"><time datetime="2<?php echo $berita[0]->created_at ?>"><?php echo $berita[0]->created_at ?></time></a></li>
+                  <li class="d-flex align-items-center"><i class="fa fa-user"></i> <a href="<?php echo base_url('pages/berita/' . $link) ?>">Admin</a></li>
+                  <li class="d-flex align-items-center"><i class="fa fa-clock"></i> <a href="<?php echo base_url('pages/berita/' . $link) ?>"><time datetime="2<?php echo $berita[0]->created_at ?>"><?php echo $berita[0]->created_at ?></time></a></li>
                 </ul>
               </div>
 
