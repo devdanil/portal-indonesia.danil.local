@@ -9,7 +9,10 @@ class Git extends Controller
   // Maximum attempts and reset time
   private const MAX_ATTEMPTS = 3;
   private const RESET_TIME = 300; // 5 minutes
-
+  function __construct()
+  {
+    helper('utility');
+  }
   public function index()
   {
     if (!can_access([1])) {
