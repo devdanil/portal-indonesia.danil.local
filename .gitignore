@@ -4,3 +4,4 @@ vendor/
 public/assets/
 .env
 composer.lock
+key.txt
